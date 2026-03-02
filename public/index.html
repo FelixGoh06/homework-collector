@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>作业收集</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>作业上传</h1>
+    <p class="hint">支持：.doc .docx .ppt .pptx（可扩展）</p>
+
+    <form id="form">
+      <label>
+        姓名（必须在白名单）
+        <input id="name" name="name" type="text" autocomplete="off" placeholder="例如：张三" required />
+      </label>
+
+      <label>
+        选择文件
+        <input id="file" name="file" type="file" required />
+      </label>
+
+      <button id="btn" type="submit">上传</button>
+    </form>
+
+    <div id="status" class="status"></div>
+
+    <details class="names">
+      <summary>查看可用姓名白名单（可选）</summary>
+      <ul id="nameList"></ul>
+    </details>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

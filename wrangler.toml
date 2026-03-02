@@ -1,0 +1,8 @@
+name = "homework-collector"
+compatibility_date = "2026-03-02"
+
+# Pages 项目会用到这个，但真正部署用 `wrangler pages deploy`
+# R2 绑定（名字要和代码里 env.HW_BUCKET 一致）
+[[r2_buckets]]
+binding = "HW_BUCKET"
+bucket_name = "homework-bucket"
